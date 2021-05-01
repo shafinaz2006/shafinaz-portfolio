@@ -1,0 +1,96 @@
+@import '../abstracts/variables';
+.input {
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 0.75rem;
+    padding-left: 1rem;
+    box-sizing: border-box;
+    background-color: #939490;
+    border: 1px solid #939490;
+    color: white;
+    outline: none;
+    &::placeholder {
+        color: white;
+        opacity: 0.5;
+    }
+    &:active,
+    &:focus,
+    &:focus:active {
+        border: 1px solid #484a49;
+        &::placeholder {
+            color: white;
+            opacity: 1;
+        }
+    }
+    &__label {
+        color: white;
+        padding-bottom: 0.25rem;
+        padding-top: 0.5rem;
+    }
+    &--message {
+        height: 6rem;
+        padding-top: 1rem;
+        &::placeholder {
+            color: white;
+            opacity: 0.5;
+        }
+        &:active,
+        &:focus,
+        &:focus:active {
+            padding-top: 1rem;
+        }
+    }
+    &--error {
+        border: 1px solid red;
+        &:active,
+        &:focus,
+        &:focus:active {
+            outline: none;
+            border: 1px solid red;
+            &::placeholder {
+                opacity: 1;
+            }
+        }
+    }
+    &--errorContainer {
+        margin-bottom: 0.4rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    &--errorContainer-invisible {
+        visibility: hidden;
+        margin-bottom: 0.4rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    &--formErrorContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 0.75rem;
+        padding-left: 1.5rem;
+    }
+    &--error-img {
+        height: 1rem;
+        width: 1rem;
+        padding-right: 5px;
+    }
+    &--error-msg {
+        color: white;
+        font-size: 0.8rem;
+        font-style: italic;
+    }
+}
+
+.input:-webkit-autofill,
+.input:-webkit-autofill:hover,
+.input:-webkit-autofill:focus,
+.input:-webkit-autofill:active {
+    box-shadow: 0 0 30px white inset !important;
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}

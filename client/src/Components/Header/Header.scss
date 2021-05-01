@@ -1,0 +1,144 @@
+    @import '../../Styles/abstracts/variables.scss';
+    @import '../../Styles/abstracts/mixins.scss';
+    .nav {
+        background-color: rgb(69, 69, 69);
+        width: 100%;
+        height: 5rem;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        @include tablet {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        @include desktop {}
+        &__titleDiv {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            @include tablet {
+                padding-left: 2rem;
+            }
+            @include desktop {
+                padding-left: 4rem;
+            }
+        }
+        &__title {
+            font-size: 2.5rem;
+            letter-spacing: 0.2rem;
+            padding-left: 1rem;
+            color: white;
+            font-family: Great Vibes;
+            font-weight: normal;
+            font-style: normal;
+            @include tablet {
+                padding-left: 0px;
+            }
+            @include desktop {
+                padding-left: 0px;
+            }
+            &--s {
+                font-size: 4rem;
+                font-family: Great Vibes;
+                font-weight: normal;
+                font-style: normal;
+                // animation-name: example;
+                // animation-duration: 4s;
+            }
+        }
+        &__menu {
+            padding-right: 1rem;
+            padding-top: 1rem;
+            @include tablet {
+                display: none;
+            }
+        }
+        &__mobile {
+            display: inline-block;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            background-color: rgb(69, 69, 69);
+            padding-right: 1rem;
+            z-index: 999;
+        }
+        &__tablet {
+            display: none;
+            @include tablet {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding-right: 2rem;
+                padding-top: 1rem;
+            }
+            @include desktop {
+                padding-right: 4rem;
+            }
+        }
+        &__link:link,
+        &__link:visited,
+        &__link:active {
+            color: white;
+            height: 3rem;
+            line-height: 3rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            &:hover {
+                width: 100%;
+                @include tablet {
+                    // text-decoration: underline;
+                }
+            }
+        }
+    }
+    
+    .hero {
+        background-image: url('../../Assets/images/hero.jpg');
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 50vh;
+        position: relative;
+        @include tablet {
+            height: 60vh;
+        }
+        &__textDiv {
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding-left: 1rem;
+            @include tablet {
+                bottom: 1rem;
+                right: 2rem;
+            }
+        }
+        &__quote {
+            font-weight: 400;
+        }
+        &__text {
+            font-size: 0.9rem;
+        }
+    }
+    
+    @keyframes example {
+        0% {
+            background-color: red;
+        }
+        25% {
+            background-color: yellow;
+        }
+        50% {
+            background-color: blue;
+        }
+        100% {
+            background-color: green;
+        }
+    }

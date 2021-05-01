@@ -1,0 +1,25 @@
+@import '../../Styles/abstracts/mixins.scss';
+@import '../../Styles/abstracts/variables.scss';
+.footer {
+    padding-bottom: 2rem;
+    padding-top: 4rem;
+    text-align: center;
+    @include tablet {
+        padding-top: 5rem;
+    }
+    &__iconDiv {
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+    }
+    &__icon {
+        height: 3rem;
+        width: 3rem;
+        opacity: 0.5;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    &__text {
+        font-size: 0.8rem;
+        margin-bottom: -0.5rem
+    }
+}

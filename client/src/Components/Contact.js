@@ -1,5 +1,4 @@
 import React from 'react';
-import axios from 'axios';
 import './Main.scss';
 import useContactForm from '../hooks/useContactForm';
 import validate from '../hooks/contactFormValidationRules';
@@ -11,7 +10,7 @@ function Contact(){
     return(
         <section className='section contact' id='contact'>
             <h2 className='section__heading'>Contact</h2>
-            <p className='section__text'>If you have any query or interested in my projects, please fill out the form.</p>
+            <p className='section__text'>Send me a message, if you have any query or interested in my projects.</p>
             {isMessageSent? 
                 <p className='contact__message'>Your message is received. I'll get beck to you soon!!!</p>
             : ''}

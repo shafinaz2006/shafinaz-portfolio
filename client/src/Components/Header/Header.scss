@@ -40,18 +40,20 @@
             @include desktop {
                 padding-left: 0px;
             }
+            &:hover {
+                color: black;
+            }
             &--s {
                 font-size: 4rem;
                 font-family: Great Vibes;
                 font-weight: normal;
                 font-style: normal;
-                // animation-name: example;
-                // animation-duration: 4s;
             }
         }
         &__menu {
             padding-right: 1rem;
             padding-top: 1rem;
+            cursor: pointer;
             @include tablet {
                 display: none;
             }
@@ -90,9 +92,7 @@
             padding-right: 1rem;
             &:hover {
                 width: 100%;
-                @include tablet {
-                    // text-decoration: underline;
-                }
+                color: black;
             }
         }
     }

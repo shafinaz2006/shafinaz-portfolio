@@ -18,6 +18,7 @@ const transporter = nodemailer.createTransport({
   });
 
 // verifying the connection configuration
+
 transporter.verify(function(error, success) {
     if (error) {
       console.log(error);
@@ -29,8 +30,7 @@ transporter.verify(function(error, success) {
 // post request for contact:
 
 app.post('/contact', (req, res) =>{
-    console.log('inside post request');
-    console.log(req.body);
+    console.log('inside post request', req.body);
     let message = `From: ${req.body.email}${'\n'}Name: ${req.body.name}${'\n\n'}Message: ${req.body.message}`
     let mail = {
         from: 's.shafi.test@gmail.com', 
@@ -39,16 +39,13 @@ app.post('/contact', (req, res) =>{
         text: message,
     }
     transporter.sendMail(mail, (err, data) => {
-        if (err) {
-          res.json({status: 'fail'})
-        } else {
-          res.json({status: 'success'})
-        }
+        if (err) res.json({status: 'fail'})
+        else res.json({status: 'success'})
     });
-    
 })
 
 // server listening:
+
 app.listen(port, () => {
     console.log(`server listening at ${port}`);
 })

@@ -6,7 +6,7 @@ import menu_white from '../../Assets/icons/menu_white.svg';
 
 function Header() {
     const [mobileMenu, setMobileMenu] = useState(false);
-    const displayMenu = () =>{ mobileMenu? setMobileMenu(false): setMobileMenu(true);}
+    const displayMenu = () =>{mobileMenu? setMobileMenu(false): setMobileMenu(true);}
     return (
         <header className='header'>
             <nav className='nav'>

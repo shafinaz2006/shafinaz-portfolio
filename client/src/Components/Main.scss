@@ -40,7 +40,7 @@
 }
 
 .info {
-    margin-top: 2rem;
+    margin-top: 3rem;
     display: flex;
     flex-direction: column;
     @include tablet {
@@ -165,8 +165,12 @@
     &__title {
         font-size: 1.25rem;
         padding-top: -0.2rem;
-        padding-bottom: 0.4rem;
+        padding-bottom: 0.25rem;
         font-weight: 400;
+    }
+    &__desc {
+        font-size: 1rem;
+        font-style: italic;
     }
     &__date {
         font-size: 0.9rem;

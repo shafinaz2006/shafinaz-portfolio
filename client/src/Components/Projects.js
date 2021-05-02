@@ -24,25 +24,25 @@ function Projects() {
                 </div>
                 <div className='projects__project-pics'>
                     <img className='projects__pic' src={openhouse1} alt='profile pic' />
-                    <img className='projects__pic' src={openhouse2} alt='profile pic' />
+                    <img className='projects__pic projects__pic--mobile' src={openhouse2} alt='profile pic' />
                 </div>
                 <div className='projects__project-pics'>
-                    <img className='projects__pic' src={openhouse3} alt='profile pic' />
-                    <img className='projects__pic' src={openhouse4} alt='profile pic' />
+                    <img className='projects__pic projects__pic--mobile' src={openhouse3} alt='profile pic' />
+                    <img className='projects__pic ' src={openhouse4} alt='profile pic' />
                 </div>
             </div>
             <div className='projects__project'>
                 <div className='projects__project-desc'>
                     <h3 className='section__subHeading'> Life After BrainStation </h3>
                     <p className='info__text'>
-                        An application to choose favorite books from NY Times bestsellers API and movies from IMDB API. 
+                        A responsive application to choose favorite books from NY Times bestsellers API and movies from IMDB API. 
                     </p>
                     <a className='projects__gitLink button button--projects' href= 'https://shafinaz2006.github.io/Life-after-BrainStation/#/' target='_blank' rel="noreferrer">View the application</a>
                 </div>
                 <div className='projects__project-pics'>
-                    <img className='projects__pic projects__pic--2' src={project21} alt='profile pic' />
-                    <img className='projects__pic projects__pic--2' src={project22} alt='profile pic' />
-                    <img className='projects__pic projects__pic--2' src={project23} alt='profile pic' />
+                    <img className='projects__pic projects__pic--2 projects__pic--mobile' src={project21} alt='profile pic' />
+                    <img className='projects__pic projects__pic--2 projects__pic--mobile' src={project22} alt='profile pic' />
+                    <img className='projects__pic projects__pic--2 ' src={project23} alt='profile pic' />
                 </div>
             </div>
             <div className='projects__project'>
@@ -54,8 +54,8 @@ function Projects() {
                     <a className='projects__gitLink button button--projects' href= 'https://faculty.tru.ca/jtomal/' target='_blank' rel="noreferrer">View Webpage</a>
                 </div>
                 <div className='projects__project-pics'>
-                    <img className='projects__pic ' src={webPage2} alt='profile pic' />
-                    <img className='projects__pic' src={webPage1} alt='profile pic' />
+                    <img className='projects__pic projects__pic--mobile' src={webPage2} alt='profile pic' />
+                    <img className='projects__pic ' src={webPage1} alt='profile pic' />
                 </div>
             </div>
         </section>

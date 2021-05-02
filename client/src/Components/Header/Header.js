@@ -17,10 +17,10 @@ function Header() {
                     <img src={menu_white} alt='menu' onClick={displayMenu} className='nav__menu'/>
                 </div>
                 <div className={`${mobileMenu? 'nav__mobile': 'nav__tablet'}`}>
-                    <a className='nav__link' href='#projects'> Projects </a>
-                    <a className='nav__link' href='#education'> Education </a>
+                    <a className='nav__link' href='/#projects'> Projects </a>
+                    <a className='nav__link' href='/#education'> Education </a>
                     <a className='nav__link' href={resume} target='_blank' rel="noreferrer"> Resume </a>
-                    <a className='nav__link' href='#contact'> Contact</a>
+                    <a className='nav__link' href='/#contact'> Contact</a>
                 </div>
             </nav>
             <section className='hero'>

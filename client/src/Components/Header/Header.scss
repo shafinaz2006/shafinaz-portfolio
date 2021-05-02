@@ -2,6 +2,9 @@
     @import '../../Styles/abstracts/mixins.scss';
     .nav {
         background-color: rgb(69, 69, 69);
+        position: fixed;
+        top: 0;
+        z-index: 1;
         width: 100%;
         height: 5rem;
         margin-top: 0px;
@@ -98,6 +101,7 @@
     }
     
     .hero {
+        margin-top: 5rem;
         background-image: url('../../Assets/images/hero.jpg');
         background-position: center;
         background-size: cover;

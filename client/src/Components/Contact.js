@@ -11,14 +11,14 @@ function Contact(){
         <section className='section contact' id='contact'>
             <h2 className='section__heading'>Contact</h2>
             <p className='section__text'>Send me a message, if you have any query or interested in my projects.</p>
-            {isMessageSent? 
-                <p className='contact__message'>Your message is received. I'll get beck to you soon!!!</p>
-            : ''}
             <div className='info'>
                 <div className='info__picDiv'>
                     <img className='info__pic contact__pic' src={questionPic} alt='question pic'/>
                 </div>
                 <form className='info__right contact__form' onSubmit={handleSubmit}>
+                    {isMessageSent? 
+                    <p className='contact__message'>Your message is received. I'll get beck to you soon!!!</p>
+                    : ''}
                     <label className='input__label' htmlFor='name'> Name:</label>
                     <input type='text' className='input' name='name' placeholder='name' 
                            id='input__name' onChange={handleChange} value={values.name ||''}/>

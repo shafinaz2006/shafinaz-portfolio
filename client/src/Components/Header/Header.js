@@ -7,6 +7,9 @@ import menu_white from '../../Assets/icons/menu_white.svg';
 function Header() {
     const [mobileMenu, setMobileMenu] = useState(false);
     const displayMenu = () =>{mobileMenu? setMobileMenu(false): setMobileMenu(true);}
+    const handleMenuClick = () =>{
+        displayMenu();
+    }
     return (
         <header className='header'>
             <nav className='nav'>
@@ -17,10 +20,10 @@ function Header() {
                     <img src={menu_white} alt='menu' onClick={displayMenu} className='nav__menu'/>
                 </div>
                 <div className={`${mobileMenu? 'nav__mobile': 'nav__tablet'}`}>
-                    <a className='nav__link' href='/#projects'> Projects </a>
-                    <a className='nav__link' href='/#education'> Education </a>
-                    <a className='nav__link' href={resume} target='_blank' rel="noreferrer"> Resume </a>
-                    <a className='nav__link' href='/#contact'> Contact</a>
+                    <a className='nav__link' onClick={handleMenuClick} href='/#projects'> Projects </a>
+                    <a className='nav__link' onClick={handleMenuClick} href='/#education'> Education </a>
+                    <a className='nav__link' onClick={handleMenuClick} href={resume} target='_blank' rel="noreferrer"> Resume </a>
+                    <a className='nav__link' onClick={handleMenuClick} href='/#contact'> Contact</a>
                 </div>
             </nav>
             <section className='hero'>

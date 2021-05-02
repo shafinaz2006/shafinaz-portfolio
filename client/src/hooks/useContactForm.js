@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import {baseURL} from '../Utils/API_data';
 import axios from 'axios';
 const useContactForm = (validate) => {
     const [values, setValues] = useState({});
@@ -10,9 +11,9 @@ const useContactForm = (validate) => {
     useEffect(() => {
         if (Object.keys(errors).length === 0 && isSubmitting) {
             function sendMessage(newMessage) {
-                axios.post('http://localhost:8080/contact', newMessage)
+                axios.post(`${baseURL}/contact`, newMessage)
                     .then(response => {
-                        console.log(response.status);
+                        console.log('message sent status: ', response.status);
                     })
                     .catch(error => console.log(error));
             }
@@ -31,7 +32,7 @@ const useContactForm = (validate) => {
     };
 
     // handle input change:
-    
+
     const handleChange = (event) => {
         event.persist();
         setValues(values => ({ ...values, [event.target.name]: event.target.value }));

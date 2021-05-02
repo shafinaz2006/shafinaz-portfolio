@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express();
 require('dotenv').config();
-const port = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8080;
 const password = process.env.GMAIL_PW;
 const nodemailer = require('nodemailer');
 const cors = require('cors');
@@ -31,7 +31,7 @@ transporter.verify(function(error, success) {
 
 app.post('/contact', (req, res) =>{
     console.log('inside post request', req.body);
-    let message = `From: ${req.body.email}${'\n'}Name: ${req.body.name}${'\n\n'}Message: ${req.body.message}`
+    let message = `From: ${req.body.email}${'\n'}Name: ${req.body.name}${'\n\n'}Message: ${'\n'}${req.body.message}`
     let mail = {
         from: 's.shafi.test@gmail.com', 
         to: 'shafinaz2006@gmail.com', 
@@ -46,6 +46,6 @@ app.post('/contact', (req, res) =>{
 
 // server listening:
 
-app.listen(port, () => {
-    console.log(`server listening at ${port}`);
+app.listen(PORT, () => {
+    console.log(`server listening at ${PORT}`);
 })

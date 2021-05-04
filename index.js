@@ -43,8 +43,8 @@ app.post('/contact', (req, res) =>{
     console.log('inside post request', req.body);
     let message = `From: ${req.body.email}${'\n'}Name: ${req.body.name}${'\n\n'}Message: ${'\n'}${req.body.message}`
     let mail = {
-        from: `${user}`, 
-        to: `${emailReceiver}`, 
+        from: user, 
+        to: emailReceiver, 
         subject:'Message from portfolio contact',
         text: message,
     }

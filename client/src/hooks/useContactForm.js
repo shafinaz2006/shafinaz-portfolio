@@ -11,7 +11,7 @@ const useContactForm = (validate) => {
     useEffect(() => {
         if (Object.keys(errors).length === 0 && isSubmitting) {
             function sendMessage(newMessage) {
-                axios.post(`${baseURL}/contact`, newMessage)
+                axios.post('http://localhost:5000/contact', newMessage)
                     .then(response => {
                         console.log('message sent status: ', response.status);
                     })

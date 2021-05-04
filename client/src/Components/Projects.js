@@ -18,7 +18,7 @@ function Projects() {
                 <div className='projects__project-desc'>
                     <h3 className='section__subHeading'> OPEN HOUSE </h3>
                     <p className='info__text'>
-                        OPEN HOUSE is a platform for home buyers, sellers and professionals related with housing business.
+                        OPEN HOUSE is a platform for home buyers, sellers and professionals related to the real estate industry.
                     </p>
                     <a className='projects__gitLink button button--projects' href= 'https://github.com/shafinaz2006/shafinaz-open-house-app' target='_blank' rel="noreferrer">View code</a>
                 </div>
@@ -35,7 +35,7 @@ function Projects() {
                 <div className='projects__project-desc'>
                     <h3 className='section__subHeading'> Life After BrainStation </h3>
                     <p className='info__text'>
-                        A responsive application to choose favorite books from NY Times bestsellers API and movies from IMDB API. 
+                        A responsive application to choose favourite books from New York Times bestsellers' API and movies from IMDB API. 
                     </p>
                     <a className='projects__gitLink button button--projects' href= 'https://shafinaz2006.github.io/Life-after-BrainStation/#/' target='_blank' rel="noreferrer">View the application</a>
                 </div>

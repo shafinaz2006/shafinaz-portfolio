@@ -10,7 +10,7 @@ function Contact(){
     return(
         <section className='section contact' id='contact'>
             <h2 className='section__heading'>Contact</h2>
-            <p className='section__text'>Send me a message, if you have any query or interested in my projects.</p>
+            <p className='section__text'>Send me a message if you have any questions or interested in my projects.</p>
             <div className='info'>
                 <div className='info__picDiv'>
                     <img className='info__pic contact__pic' src={questionPic} alt='question pic'/>

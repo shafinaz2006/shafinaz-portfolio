@@ -87,6 +87,8 @@
     &__text {
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
+        text-align: justify;
+        text-justify: inter-word;
         &--form {
             margin-bottom: 1rem;
         }

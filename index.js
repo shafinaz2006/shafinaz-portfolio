@@ -1,24 +1,28 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-require('dotenv').config();
-const PORT = process.env.PORT || 8080;
+const config = require('dotenv').config();
+const PORT = process.env.PORT || 5000;
+const user = process.env.GMAIL_USER;
 const password = process.env.GMAIL_PW;
+const emailReceiver = process.env.EMAIL_RECEIVER;
 const nodemailer = require('nodemailer');
 const cors = require('cors');
 
 app.use(cors());
 app.use(express.json());
-
-app.use(express.static(path.join(__dirname, 'build')));
-app.get('/*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
-});
+if(process.env.NODE_ENV === 'production') {
+    // set static folder
+    app.use(express.static('client/build'));
+    app.get('*', (req, res) => {
+      res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+    });
+}
 
 const transporter = nodemailer.createTransport({
     service:'gmail',
     auth: {
-      user: "s.shafi.test@gmail.com",
+      user: `${user}`,
       pass: `${password}`
     }
   });
@@ -39,8 +43,8 @@ app.post('/contact', (req, res) =>{
     console.log('inside post request', req.body);
     let message = `From: ${req.body.email}${'\n'}Name: ${req.body.name}${'\n\n'}Message: ${'\n'}${req.body.message}`
     let mail = {
-        from: 's.shafi.test@gmail.com', 
-        to: 'shafinaz2006@gmail.com', 
+        from: `${user}`, 
+        to: `${emailReceiver}`, 
         subject:'Message from portfolio contact',
         text: message,
     }

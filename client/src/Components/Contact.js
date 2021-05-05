@@ -17,7 +17,7 @@ function Contact(){
                 </div>
                 <form className='info__right contact__form' onSubmit={handleSubmit}>
                     {isMessageSent? 
-                    <p className='contact__message'>Your message is received. I'll get beck to you soon!!!</p>
+                    <p className='contact__message'>Your message is received. I'll get back to you soon!!!</p>
                     : ''}
                     <label className='input__label' htmlFor='name'> Name:</label>
                     <input type='text' className='input' name='name' placeholder='name' 

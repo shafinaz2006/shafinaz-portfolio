@@ -24,12 +24,12 @@ function Header() {
                     <a className='nav__link' onClick={handleMenuClick} href='/#contact'> Contact</a>
                 </div>
             </nav>
-            <section className='hero'>
+            {/* <section className='hero'>
                 <div className='hero__textDiv'>
                     <p className='hero__quote'>The journey of a thousand miles begins with one step.</p>
                     <p className='hero__text'>-Lao Tzu</p>
                 </div>
-            </section>
+            </section> */}
         </header>
     )
 }

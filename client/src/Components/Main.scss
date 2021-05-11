@@ -37,6 +37,9 @@
             display: inline;
         }
     }
+    &__pic {
+        // @include slideRight;
+    }
 }
 
 .info {
@@ -162,6 +165,13 @@
     padding-top: 3rem;
     @include tablet {
         padding-top: 6rem;
+    }
+    &__pic {
+        // @include slideLeft;
+        object-fit: cover;
+        @include tablet {
+            object-fit: contain;
+        }
     }
     &__list {
         padding-top: 0.5rem;

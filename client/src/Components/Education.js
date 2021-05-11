@@ -23,8 +23,8 @@ function Education(){
         <section className='section education' id='education'>
             <h2 className='section__heading'>Education</h2>
             <div className='info info--reverse'>
-                <div className='info__picDiv'>
-                    <img className='info__pic' src={graduationPic} alt='graduation pic' />
+                <div className='info__picDiv education__picDiv'>
+                    <img className='info__pic education__pic' src={graduationPic} alt='graduation pic' />
                 </div>
                 <ul className='info__right education__list'>
                     {educationItem.map(education => 

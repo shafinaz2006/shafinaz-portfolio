@@ -3,7 +3,7 @@ import './Main.scss';
 import useContactForm from '../hooks/useContactForm';
 import validate from '../hooks/contactFormValidationRules';
 import questionPic from '../Assets/images/question.jpg';
-import error from '../Assets/icons/error.svg';
+import error from '../Assets/icons/report.svg';
 
 function Contact(){
     const { values, handleChange, handleSubmit, errors, isMessageSent } = useContactForm(validate);
@@ -11,7 +11,7 @@ function Contact(){
         <section className='section contact' id='contact'>
             <h2 className='section__heading'>Contact</h2>
             <p className='section__text'>Send me a message if you have any questions or interested in my projects.</p>
-            <div className='info'>
+            <div className='info contact__info'>
                 <div className='info__picDiv'>
                     <img className='info__pic contact__pic' src={questionPic} alt='question pic'/>
                 </div>

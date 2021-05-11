@@ -2,28 +2,37 @@
 @import '../../Styles/abstracts/variables.scss';
 .footer {
     padding-bottom: 2rem;
-    padding-top: 4rem;
+    padding-top: 2rem;
     text-align: center;
+    background-color: #446854;
+    color: white;
     @include tablet {
-        padding-top: 5rem;
+        padding-top: 3rem;
     }
     &__iconDiv {
-        margin-top: 3rem;
-        margin-bottom: 4rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
     &__icon {
-        height: 3rem;
-        width: 3rem;
+        height: 2rem;
+        width: 2rem;
         opacity: 0.5;
         margin-left: 0.5rem;
         margin-right: 0.5rem;
     }
     &__text {
+        color: white;
         font-size: 0.8rem;
-        margin-bottom: -0.5rem
+        margin-bottom: -0.5rem;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        &--copyright {
+            padding-left: 0.25rem;
+        }
     }
     &__copyright {
         font-size: 1rem;
-        margin-bottom: -2rem;
+        margin: 0px;
     }
 }

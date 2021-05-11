@@ -15,7 +15,10 @@ function Footer(){
                     <img className='footer__icon' src={github} alt= 'github icon'/>
                 </a>
             </div>
-            <p className='footer__text'>Shafinaz Shafique<span className='footer__copyright'> &copy;</span></p>
+            <p className='footer__text'>
+                <span className='footer__copyright'> &copy;</span> 
+                <span className='footer__text--copyright'>Shafinaz Shafique</span>
+            </p>
             <p className='footer__text'> For any query, contact at shafinaz2006@gmail.com </p>
         </footer>
     )

@@ -1,7 +1,8 @@
 import React from 'react';
 import './Main.scss';
 import graduationPic from '../Assets/images/graduation.jpg';
-import schoolIcon from '../Assets/icons/school_white.svg';
+import schoolIcon from '../Assets/icons/school_black.svg';
+
 
 function Education(){
     let educationItem = [{

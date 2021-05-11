@@ -19,11 +19,11 @@
         padding-right: 6.25rem;
     }
     &__heading {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
     &__text {
         font-size: 1.25rem;
-        padding-bottom: 1rem;
+        // padding-bottom: 1rem;
         text-align: center;
     }
 }
@@ -46,10 +46,12 @@
     @include tablet {
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
     }
     &--reverse {
+        margin-top: 0rem;
         @include tablet {
+            margin-top: 3rem;
             flex-direction: row-reverse;
         }
     }
@@ -60,7 +62,7 @@
         @include tablet {
             margin-right: 2rem;
             width: 45%;
-            height: 70vh;
+            height: 50vh;
             margin-bottom: 0px;
         }
         @include desktop {
@@ -71,7 +73,8 @@
     &__pic {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
+        // border: 1px solid rgb(69, 69, 69);
     }
     &__right {
         width: 100%;
@@ -99,7 +102,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #525252;
+    background-color: rgb(230, 230, 250);
     &__project {
         margin-bottom: 5rem;
     }
@@ -131,17 +134,19 @@
         height: 100%;
         object-fit: cover;
         margin-bottom: 2rem;
+        border: 1px solid rgba(98, 127, 95, 0.5);
         @include tablet {
             width: auto;
             margin-left: 1rem;
             margin-right: 1rem;
-            // object-fit: contain;
+            object-fit: contain;
         }
         &--2 {
             object-fit: contain;
+            border: none;
             @include tablet {
                 width: 30%;
-                object-fit: cover;
+                object-fit: contain;
             }
         }
         &--mobile {
@@ -154,6 +159,10 @@
 }
 
 .education {
+    padding-top: 3rem;
+    @include tablet {
+        padding-top: 6rem;
+    }
     &__list {
         padding-top: 0.5rem;
         list-style: none;
@@ -169,6 +178,8 @@
         width: 1.5rem;
         height: 1.5rem;
         margin-right: 1rem;
+        margin-top: 0.25rem;
+        opacity: 0.2rem;
     }
     &__title {
         font-size: 1.25rem;
@@ -186,9 +197,9 @@
 }
 
 .contact {
-    background-color: #525252;
-    &__pic {
-        opacity: 0.5;
+    background-color: rgb(230, 230, 250);
+    &__info {
+        align-items: flex-start;
     }
     &__form {
         display: flex;

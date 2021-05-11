@@ -2,6 +2,7 @@
     @import '../../Styles/abstracts/mixins.scss';
     .nav {
         background-color: rgb(69, 69, 69);
+        background-color: #273f3d;
         position: fixed;
         top: 0;
         z-index: 1;
@@ -125,24 +126,13 @@
             }
         }
         &__quote {
+            color: white;
             font-weight: 400;
+            // opacity: 0.8;
         }
         &__text {
+            color: white;
+            // opacity: 0.8;
             font-size: 0.9rem;
-        }
-    }
-    
-    @keyframes example {
-        0% {
-            background-color: red;
-        }
-        25% {
-            background-color: yellow;
-        }
-        50% {
-            background-color: blue;
-        }
-        100% {
-            background-color: green;
         }
     }

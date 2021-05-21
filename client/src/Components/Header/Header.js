@@ -1,7 +1,7 @@
 
 import React, {useState} from 'react';
 import './Header.scss';
-import resume from '../../Assets/Shafinaz_Resume.pdf';
+import resume from '../../Assets/Shafinaz_Shafique_Resume.pdf';
 import menu_white from '../../Assets/icons/menu_white.svg';
 
 function Header() {

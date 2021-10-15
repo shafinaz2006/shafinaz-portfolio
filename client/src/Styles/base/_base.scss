@@ -7,10 +7,8 @@
 
 html {
     box-sizing: border-box;
-    // background-color: rgba(44, 44, 44, 0.7);
-    background-color: white;
-    // color: white;
-    color: rgb(69, 69, 69);
+    background-color: $color-primary-bg;
+    color: $color-primary-text;
 }
 
 *,
@@ -55,7 +53,7 @@ p {
     line-height: 1.5rem;
     font-weight: 300;
     // color: white;
-    color: rgb(69, 69, 69);
+    color: $color-primary-text;
 }
 
 a {

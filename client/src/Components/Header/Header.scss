@@ -1,22 +1,13 @@
     @import '../../Styles/abstracts/variables.scss';
     @import '../../Styles/abstracts/mixins.scss';
-    .header {
-        margin-bottom: 2rem;
-        @include tablet {
-            margin-bottom: 4rem;
-        }
-    }
-    
     .nav {
-        background-color: rgb(69, 69, 69);
-        background-color: #273f3d;
+        background-color: #006d77;
         position: fixed;
         top: 0;
-        z-index: 1;
         width: 100%;
         height: 5rem;
-        margin-top: 0px;
         display: flex;
+        z-index: 1;
         flex-direction: column;
         color: white;
         @include tablet {
@@ -24,49 +15,42 @@
             justify-content: space-between;
             align-items: center;
         }
-        @include desktop {}
         &__titleDiv {
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
+            margin-top: 1rem;
             @include tablet {
                 padding-left: 2rem;
-            }
-            @include desktop {
-                padding-left: 4rem;
+                margin-top: 0;
             }
         }
         &__title {
             font-size: 2.5rem;
-            letter-spacing: 0.2rem;
+            letter-spacing: 0.15rem;
             padding-left: 1rem;
             color: white;
             font-family: Great Vibes;
             font-weight: normal;
             font-style: normal;
+            transition: transform 0.5s ease-in;
             @include tablet {
-                padding-left: 0px;
-            }
-            @include desktop {
                 padding-left: 0px;
             }
             &:hover {
-                color: black;
-            }
-            &--s {
-                font-size: 4rem;
-                font-family: Great Vibes;
-                font-weight: normal;
-                font-style: normal;
+                animation: hvr-pulse 1s linear;
             }
         }
         &__menu {
-            padding-right: 1rem;
-            padding-top: 1rem;
+            padding-right: 1.5rem;
             cursor: pointer;
+            transition: transform 0.5s ease-in;
             @include tablet {
                 display: none;
+            }
+            &:hover {
+                transform: rotate(360deg);
             }
         }
         &__mobile {
@@ -75,8 +59,7 @@
             flex-direction: column;
             justify-content: flex-start;
             align-items: flex-start;
-            background-color: rgb(69, 69, 69);
-            padding-right: 1rem;
+            background-color: #006d77;
             z-index: 999;
         }
         &__tablet {
@@ -87,10 +70,6 @@
                 justify-content: space-between;
                 align-items: center;
                 padding-right: 2rem;
-                padding-top: 1rem;
-            }
-            @include desktop {
-                padding-right: 4rem;
             }
         }
         &__link:link,
@@ -101,9 +80,10 @@
             line-height: 3rem;
             padding-left: 1rem;
             padding-right: 1rem;
+            transition: transform 0.5s ease-in;
             &:hover {
-                width: 100%;
-                color: black;
+                font-weight: bold;
+                transform: scale(1.3);
             }
         }
     }
@@ -116,30 +96,25 @@
         width: 100%;
         height: 50vh;
         position: relative;
-        @include tablet {
-            height: 60vh;
-        }
         &__textDiv {
             position: absolute;
             bottom: 1rem;
             right: 1rem;
+            padding-left: 1rem;
             display: flex;
             flex-direction: column;
             align-items: flex-end;
-            padding-left: 1rem;
             @include tablet {
-                bottom: 1rem;
                 right: 2rem;
             }
         }
         &__quote {
             color: white;
+            font-style: italic;
             font-weight: 400;
-            // opacity: 0.8;
         }
         &__text {
             color: white;
-            // opacity: 0.8;
             font-size: 0.9rem;
         }
     }

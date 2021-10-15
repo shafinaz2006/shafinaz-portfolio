@@ -1,41 +1,31 @@
 @import '../../Styles/abstracts/mixins.scss';
 @import '../../Styles/abstracts/variables.scss';
 .footer {
-    padding-bottom: 2rem;
-    padding-top: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     text-align: center;
-    background-color: #446854;
+    background-color: $color-footer;
     color: white;
-    @include tablet {
-        padding-top: 2rem;
+    &__connect {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0.5rem;
     }
     &__heading {
-        font-size: 2rem;
-    }
-    &__iconDiv {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: white;
+        margin-right: 0.5rem;
     }
     &__icon {
-        height: 2rem;
-        width: 2rem;
+        height: 1.4rem;
+        width: 1.4rem;
         opacity: 0.5;
-        margin-left: 0.5rem;
         margin-right: 0.5rem;
     }
     &__text {
         color: white;
         font-size: 0.8rem;
-        margin-bottom: -0.5rem;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        &--copyright {
-            padding-left: 0.25rem;
-        }
-    }
-    &__copyright {
-        font-size: 1rem;
-        margin: 0px;
     }
 }

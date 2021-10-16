@@ -1,18 +1,16 @@
 @import '../abstracts/variables';
 @import '../abstracts/mixins';
 .button {
-    // width: 180px;
     font-size: 1.25rem;
     font-weight: 400;
-    background-color: rgba(44, 44, 44, 0.8);
+    background-color: $color-button;
     border: none;
     color: white;
     padding: 0.5rem 1.5rem;
     margin-top: 1rem;
     &:hover {
         cursor: pointer;
-        background-color: #939490;
-        // border: 2px solid rgba(44, 44, 44, 0.8);
+        background-color: $color-button-hover;
         &::before {
             display: none;
         }

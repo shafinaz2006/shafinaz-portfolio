@@ -6,24 +6,24 @@
     padding-left: 1rem;
     box-sizing: border-box;
     background-color: white;
-    border: 1px solid rgba(98, 127, 95, 0.5);
+    border: 1px solid $color-input-border;
     color: black;
     outline: none;
     &::placeholder {
-        color: rgb(69, 69, 69);
+        color: $color-primary-text;
         opacity: 0.8;
     }
     &:active,
     &:focus,
     &:focus:active {
-        border: 1px solid rgba(98, 127, 95, 1);
+        border: 1px solid $color-input-border-focus;
         &::placeholder {
-            color: rgb(69, 69, 69);
+            color: $color-primary-text;
             opacity: 1;
         }
     }
     &__label {
-        color: rgb(69, 69, 69);
+        color: $color-primary-text;
         padding-bottom: 0.25rem;
         padding-top: 0.25rem;
     }
@@ -31,7 +31,7 @@
         height: 4rem;
         padding-top: 1rem;
         &::placeholder {
-            color: rgb(69, 69, 69);
+            color: $color-primary-text;
             opacity: 0.8;
         }
         &:active,

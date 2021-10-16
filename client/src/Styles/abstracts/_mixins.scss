@@ -47,3 +47,23 @@
         transform: translateX(0%);
     }
 }
+
+@keyframes hvr-pulse {
+    25% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    75% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
+@keyframes border-anim {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1.25);
+    }
+}

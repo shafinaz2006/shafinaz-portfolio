@@ -8,7 +8,7 @@ const addGTag = gaID => {
 
 export const addAnalytics = () => {
   const root = document.head;
-  const gaID = process.env.GA_ID;
+  const gaID = 'G-J1RQ85QG95';
   const script = document.createElement('script');
   script.async = true;
   script.src = `https://www.googletagmanager.com/gtag/js?id=${gaID}`;

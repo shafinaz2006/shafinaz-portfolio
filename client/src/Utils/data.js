@@ -1,6 +1,6 @@
 
 export const infoText = [
-  'Hello!! I\'m Shafinaz Shafique and work as a React developer at Zemind Gaming Studio in Toronto.',
+  'Hello!! I\'m Shafinaz Shafique and work as a Mobile Console Developer (Front ent dev) at NRT Technology Corp. in Toronto.',
   'I worked as a Quality Assurance Analyst for more than two years in Toronto and Vancouver. During this time, I collaborated with developers and grew interest to pursue my career as a Web Developer.',
   'I like new challenges and get super excited when I solve a problem.',
   'Over the years, I learned that perseverance is a great element for success. Now my motto is, while working on a problem, if one approach doesn\'t work, that means I have another ninety-nine to try!!!'
